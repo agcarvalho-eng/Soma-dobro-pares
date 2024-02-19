@@ -9,8 +9,8 @@
  */
 function somaDobroNumerosParesFuncional(numeros){
     // TODO: Insira seu código funcional aqui
-    let somaDobroPar = numeros
-    .filter(num => num % 2) == 0
+    const somaDobroPar = numeros
+    .filter(num => num % 2 === 0)
     .map(num => num * 2)
     .reduce((soma, num) => soma + num, 0);
     return somaDobroPar;
